@@ -1,0 +1,72 @@
+.header-container {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner-wrapper {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banners-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 95vh;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.banner.active {
+  opacity: 1;
+}
+
+
+
+.dots-container {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 10;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #2288a0 0%, #4A9B85 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #3A7968;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 1rem;
+  }
+
+  .banner-button {
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,140 @@
+/* EMI Calculator Container */
+.emi-calculator {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+  margin: auto;
+  gap: 50px;
+}
+
+.emi-left {
+  padding: 30px;
+  width: 600px;
+  border-radius: 12px;
+}
+
+.emi-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.loan-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.loan-buttons button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #3593b0;
+  background: #fff;
+  color: #3593b0;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.loan-buttons .active {
+  background: #3593b0;
+  color: white;
+}
+
+.loan-buttons :hover{
+    background: #3593b0;
+    color: #fff; 
+}
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+  background: linear-gradient(to right,  #4a9b85,#3593b0);
+  height: 5px;
+  border-radius: 5px;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+.apply-button {
+  width: 50%;
+  background: linear-gradient(to right,  #4a9b85,#3593b0);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+/* Right Panel */
+.emi-right {
+  text-align: center;
+  margin-right: 150px;
+}
+
+.emi-amount {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3593b0;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+/* EMI Summary */
+.emi-summary {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.emi-summary p {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.total {
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
+}
+
+
+.input-container {
+    display: flex;
+    background: #fff;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .input-container span {
+    font-size: 18px;
+    margin-left: 5px;
+    color: #333;
+  }
+  
+  .input-container input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 22px;
+  }
+  
